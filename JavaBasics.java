@@ -1052,10 +1052,10 @@ System.out.println("total bill with GST = " + newtotal);
  }else {
     tax=(int)(0.3*income);
  }
- System.out.println("Tax is : " + tax);*/
+ System.out.println("Tax is : " + tax);
  }
 }
-
+*/
 
 
 
