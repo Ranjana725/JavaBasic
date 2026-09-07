@@ -1053,9 +1053,71 @@ System.out.println("total bill with GST = " + newtotal);
     tax=(int)(0.3*income);
  }
  System.out.println("Tax is : " + tax);
- }
-}
+ //Tertionary operator
+int number = 4;
+
+String type = ((number%2)==0) ?"even":"odd";
+System.out.println(type);
+
+//fail  pass
+int marks = 78;
+String reportCard = marks >= 33 ? "PASS" : "FAIL";
+System.out.println(reportCard);
+
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    char operator = sc.next().charAt(0);
+
+    switch(operator){
+        case'+':System.out.println(a+b);
+                   break;
+        case'-':System.out.println(a-b);
+                   break;
+        case'*':System.out.println(a*b);
+                   break;
+        case'/':System.out.println(a/b);
+                   break;
+        
+    }
+   //num is positive oe negative
+   Scanner sc = new Scanner(System.in);
+   int num = sc.nextInt();
+   String value = (num>0)?"positive":"negative";
+   System.out.println(value);
+   //year is leap or not
+   Scanner sc = new Scanner(System.in);
+   System.out.print("Input the year: ");
+   int year = sc.nextInt();
+
+   boolean x = (year % 4) == 0;
+   boolean y = (year % 100) != 0;
+   boolean z = ((year % 100 == 0)&&(year% 400 == 0));
+
+   if(x&&(y||z)){
+    System.out.println(year + "is a leap year");
+   } else {
+    System.out.println(year + "is not a leap year");
+   }
 */
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
 
 
