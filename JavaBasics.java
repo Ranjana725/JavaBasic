@@ -947,7 +947,7 @@ public static void insertionSort(int arr[]){
             Integer arr [] = {5,4,1,3,2};
             countingSort(arr);
             printArr(arr);
-        }*/
+        }
    //2D array 
        public static void main(String args[]){
         int matrix [] [] = new int[3][3];
@@ -966,8 +966,110 @@ public static void insertionSort(int arr[]){
             }
             System.out.println();
         }
-       }
-     }
+        //sum of two numbers
+  /*  Scanner sc = new Scanner (System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int sum = a+b;
+    System.out.println("sum = " + sum);
+    //product of two numbers
+    Scanner sc = new Scanner (System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+
+    int product = a*b;
+    System.out.println("product = " + product);
+    
+   //Area of circle
+   Scanner sc = new Scanner(System.in);
+   int r = sc.nextInt();
+   double area = 3.14*r*r;
+   System.out.println("area of crcle = " + area);
+
+//type promotion in expression only work with expression
+char a = 'a';
+char b = 'b';
+System.out.println((int)(b));
+System.out.println((int)(a));
+System.out.println(b-a);
+short a = 5;
+byte b = 10;
+char c = 'c';
+byte bt = (byte) (a+b+c);
+System.out.println(bt);
+//average of three numbers
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+int b = sc.nextInt();
+int c = sc.nextInt();
+int avg = (a+b+c)/3;
+System.out.println("Average = " + avg);
+
+//area of square
+Scanner sc = new Scanner(System.in);
+int side = sc.nextInt();
+int area = side*side;
+System.out.println("area of square = " + area);
+//bill with gst
+Scanner sc = new Scanner(System.in);
+float pencil = sc.nextFloat();
+float pen = sc.nextFloat(); 
+float eraser = sc.nextFloat();
+float totalprice = pencil+pen+eraser;
+float newtotal =  (totalprice + (0.18f*totalprice));
+System.out.println("total bill = " + totalprice);
+System.out.println("total bill with GST = " + newtotal);
+   // conditional statements
+   int age = 16;
+   if(age>=18){
+    System.out.println("adult: drive ,vote");
+   }else {
+    System.out.println("not adult");
+   }
+  //largest of two numbers
+  int A = 1;
+  int B = 3;
+  if(A>B){
+    System.out.println("A is largest");
+  }else{
+    System.out.println("B is largest");
+  }
+ //number is even or odd
+  Scanner sc = new Scanner(System.in);
+ int n = sc.nextInt();
+ if (n%2==0){
+    System.out.println("number is even");
+ }else {
+    System.out.println("number is odd");
+ }
+//Income Tax Calculator
+ Scanner sc = new Scanner(System.in);
+ int income = sc.nextInt();
+ int tax;
+ if (income<500000){
+    tax=0;
+ }else if (income>=500000 && income <= 1000000){
+    tax=(int)(0.2*income);
+ }else {
+    tax=(int)(0.3*income);
+ }
+ System.out.println("Tax is : " + tax);*/
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
