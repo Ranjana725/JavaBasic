@@ -4,7 +4,7 @@ public class JavaBasics {
         System.out.println("Hello World!");
          System.out.println("Hello World!");
           System.out.println("Hello World!");
-    }*/
+    }
     //public static void main(String args []){
       //  Scanner sc = new Scanner(System.in);
         /*System.out.println("Hello World!");
@@ -29,9 +29,9 @@ public class JavaBasics {
       int sum = a+b;
       int product = a*b;
       System.out.println(sum);
-      System.out.println(product);*/
+      System.out.println(product);
       //Area od a circle
-     /* int r = sc.nextInt();
+      int r = sc.nextInt();
       double area = 3.14*r*r;
         System.out.println(area);
 
@@ -342,9 +342,9 @@ for(int i =1 ; i<=10;i++){
     System.out.println(n+"*"+i+"="+n*i);
 }
     }
-    */
+    
   // printHelloWorld();
- /* public static int calculateSum(int num1,int num2){
+  public static int calculateSum(int num1,int num2){
     int sum = num1 + num2;
     return sum;
   }
@@ -845,9 +845,9 @@ public static void reverse(int numbers[]){
         leftMax[i] = Math.max(height[i],leftMax[i-1]);
     }
     //calculate right max boundary - array
-  }*/
+  }
   //Bubble sort
- /*public static void bubbleSort(int arr[]){
+ public static void bubbleSort(int arr[]){
     for(int turn=0;turn<arr.length-1;turn++){
         int swap = 0;
         for(int j=0;j<arr.length-1-turn;j++){
@@ -873,8 +873,7 @@ public static void main(String args[]){
     bubbleSort(arr);
     
     printArr(arr);
-*/
-/*public static void SelectionSort(int arr[]){
+public static void SelectionSort(int arr[]){
      for (int i = 0;i <arr.length-2;i++){
         int minPos = i;
     for(int j = i+1;j<arr.length;j++){
@@ -915,8 +914,8 @@ public static void insertionSort(int arr[]){
         int arr[] = { 5,4,1,3,2,};
             insertionSort(arr);
             System.out.println(arr);
-        }*/
-    /*
+        }
+    
     //inbult sort function
     public static void main(String args[]){
         int arr[] = {5,4,1,3,2};
@@ -967,7 +966,7 @@ public static void insertionSort(int arr[]){
             System.out.println();
         }
         //sum of two numbers
-  /*  Scanner sc = new Scanner (System.in);
+    Scanner sc = new Scanner (System.in);
     int a = sc.nextInt();
     int b = sc.nextInt();
     int sum = a+b;
@@ -1053,9 +1052,9 @@ System.out.println("total bill with GST = " + newtotal);
  }else {
     tax=(int)(0.3*income);
  }
- System.out.println("Tax is : " + tax);*/
+ System.out.println("Tax is : " + tax);
  }
-}
+}*/
 
 
 
