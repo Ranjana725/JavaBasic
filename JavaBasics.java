@@ -988,10 +988,109 @@ public static void main(String args[]){
                  break;
        }
 
-     }*/
-    
+     }
+    //print number from 1 to n
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int counter = 1;
+        while(counter <= n){
+            System.out.println(counter);
+            counter++;
+        }
+
+    }
+   //Reverse of a number
+   public static void main(String args[]){
+     int n = 112233;
+
+     while(n>0){
+        int lastdigit = n%10;
+        System.out.print(lastdigit);
+        n = n / 10;
+
+        System.out.println();
+     }
+
 
 }
+ public static void main(String args[]){
+     for(int i =1;i<=5;i++){
+        if(i==3){
+          break;
+        }
+        System.out.println(i);
+     }
+     System.out.println("i am out of the loop");
+ }      
+//number is prinme or not
+public static void main(String args[]){
+    System.out.print("enter a number");
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    if(n==2){
+        System.out.println("n is prime");
+    }else {
+     boolean isPrime = true;
+    for(int i =2;i<=n-1;i++){
+        if(n%i==0){
+        isPrime= false;
+        }
+    }
+
+
+    if(isPrime ==   true ){
+            System.out.println("n is Prime ");
+        }else{
+            System.out.println("n is not prime");
+        }
+    }
+    }
+   public static void main (String args[]){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    for(int i =1 ;i<=10;i++){
+        System.out.println(n+"*"+i+"="+n*i);
+    }
+   } 
+
+  //pattern 
+  public static void main (String args[]){
+    for(int i=1;i<5;i++){
+        for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+  }
+
+ //inverted star pattern
+ public static void main (String args[]){
+    for(int i=1;i<=4;i++){
+        for(int j=1 ;j<=4-i+1;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+ }
+//half pyramid pattern
+
+public static void main(String args[]){
+    int n = 4;
+
+    for(int line = 1; line<=n; line++){
+        //numbers print
+        for(int number=1; number<=line;number++){
+            System.out.print(number);
+        }
+        System.out.println();
+    }
+}*/
+}
+
+   
+
+
 
     
 
