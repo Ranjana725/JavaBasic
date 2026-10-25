@@ -1,4 +1,3 @@
-import java.util.* ;
 public class JavaBasics {
    /* public static void printHelloWorld(){ 
         System.out.println("Hello World!");
@@ -1122,11 +1121,49 @@ public static void main(String args[]){
         }
         System.out.println();
     }
-    }*/
+    }
+   //Function 
+   public static void printHelloWorld(){
+    System.out.println("Hello World!");
+   }
+
+   public static int calculateSum(int num1,int num2){
+    int sum = num1+ num2;
+    return sum;
+   }
    
+   public static void swap(int a,int b ){
+     //swap 
+        int temp = a;
+        a = b;
+        b= temp;
+        System.out.println("a=" + a);
+        System.out.println("b =" +b);
+   }
+
+    public static void main(String args[]){
+        //swap value exchannge
+        int a = 5;
+        int b = 10;
+        swap(a,b); 
+   }*/
+
+  public static int product(int a , int b){
+    int product = a*b;
+    return product;
+  }
+  public static void main (String args[]){
+    int a = 3;
+    int b = 5 ;
+    int prod = product(a,b);
+    System.out.println("product is : "+ prod);
+  }
+
+
 }
 
-   
+
+
 
 
 
