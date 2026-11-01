@@ -1344,6 +1344,8 @@ public static void main (String args[]){
     public static void main (String args[]){
         inverted_rotated_halfpyramid(4);
     }*/
+   //Inverted half-pyramid with Numbers
+   
    }
 
 
