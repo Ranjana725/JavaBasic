@@ -1343,7 +1343,7 @@ public static void main (String args[]){
    }
     public static void main (String args[]){
         inverted_rotated_halfpyramid(4);
-    }*/
+    }
    //Inverted half-pyramid with Numbers
    public static void inverted_half_pyramid_with_numbers(int n){
    for(int i=1;i<=n;i++){
@@ -1355,8 +1355,8 @@ public static void main (String args[]){
      }    
     }
     public static void main(String args[]){
-        inverted_half_pyramid_with_numbers(5);
-   }
+        inverted_half_pyramid_with_numbers(7);
+   }*/
 }
 
 
