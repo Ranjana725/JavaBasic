@@ -1192,9 +1192,163 @@ public static void main (String args[] ) {
     System.out.println(sum(3,5));
     System.out.println(sum(5,3,1));
 }
-*/
 
+public static boolean isPrime(int n){
+    boolean isPrime = true;
+    for(int i=2;i<=n-1;i++){
+        if(n % i == 0){
+        isPrime = false;
+        break;
+    }
+}
+
+  return isPrime;
  }
+ public static void main (String args[]){
+    System.out.println(isPrime(12));
+ }
+
+    public static boolean isPrime(int n) {
+        if (n < 2) {
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static void primeInRange(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
+
+    public static void main(String args[]) {
+        primeInRange(20);
+    }
+   // convert from Binary to Decimal
+   public static void binToDec(int binNum) {
+    int myNum = binNum;
+    int pow = 0;
+    int decNum = 0;
+
+    while(binNum > 0){
+        int lastDigit = binNum % 10;
+        decNum = decNum + (lastDigit * (int)Math.pow(2,pow));
+    
+    pow++;
+    binNum = binNum/10;
+    }
+
+    System.out.println("decimal of" + myNum + " = " + decNum);
+   }
+   public static void main(String args[]){
+    binToDec(1010);
+   }
+  public static void decToBin(int n ){
+    int pow = 0;
+    int binNum = 0;
+
+    while(n>0){
+        int rem = n % 2;
+        binNum = binNum + (rem*(int)Math.pow(10,pow));
+
+        pow++;
+        n = n/2;
+    }
+
+    System.out.println("binary of " + n + " = " + binNum);
+
+  }
+public static void main(String args[]){
+    decToBin(10);
+}
+//average of three numbers
+public static void avgofTwonum(int a,int b){
+    int Avg = (a+b)/2;
+    System.out.println("Average of " + a + " and " + b + " is: " + Avg);
+}
+    public static void main(String args[]){
+        avgofTwonum(5,10);
+    }
+   // isEven or Odd
+   public static boolean isEven(int n){
+    if(n%2 == 0){
+        return true;
+    }
+    else {
+        return false;
+    }
+   }
+    public static void main(String args[]){
+        isEven(6);
+        System.out.println(isEven(6));
+    }
+   //to find a number is palidrome or not
+   public static boolean isPalindrome(int n){
+    int original = n;
+    int rev = 0;
+
+    while(n>0){
+        int lastDigit = n%10;
+        rev = (rev*10) + lastDigit;
+        n = n/10;
+    }
+
+    return (original == rev);
+   }
+   //hollow rectangle pattern
+   public static void hollow_rectangle(int totRows, int totCols){
+     //outer loop 
+     for(int i=1;i<=totRows;i++){
+        //inner loop
+        for(int j=1;j<=totCols;j++){
+           // cell - (i,j)
+         if(i==1 || i==totRows || j==1 || j==totCols){
+            System.out.print("*");    
+        }else {
+            System.out.print(" ");
+        }
+     }
+     System.out.println();
+   }
+}
+
+public static void main (String args[]){
+    hollow_rectangle(4,4);
+}
+//inverted rotated half pyramid
+   public static void inverted_rotated_halfpyramid(int n){
+    //outer 
+    for(int i=1;i<=n;i++){
+       //spaces
+       for(int j=1;j<=n-i;j++){
+        System.out.print(" ");
+       }
+       //stars
+       for(int j=1;j<=i;j++){
+        System.out.print("*");
+       }
+         System.out.println();
+    }
+
+   }
+    public static void main (String args[]){
+        inverted_rotated_halfpyramid(4);
+    }*/
+   }
+
+
+
+
 
 
 
