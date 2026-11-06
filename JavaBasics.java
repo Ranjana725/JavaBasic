@@ -1427,7 +1427,7 @@ public static void butterfly(int n){
 }
   public static void main(String args[]){
     butterfly(4);
-  }*/
+  }
 //solis rombus pattern
  public static void solid_rhombus(int n){
     for(int i=1 ;i<=n;i++){
@@ -1448,9 +1448,30 @@ public static void butterfly(int n){
 public static void main(String args[]){
     solid_rhombus(5);
 }
-
-
+//hollow rhombus
+public static void hollow_rhombus(int n){
+    for(int i = 1 ;i<=n;i++){
+        //spaces
+        for(int j=1;j<=n-i;j++){
+            System.out.print(" ");
+        }
+        //hollow rectangle
+        for(int j=1;j<=n;j++){
+            if(i==1 || i==n || j==1 || j==n){
+                System.out.print("*");
+            }else {
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
 }
+            public static void main(String args[]){
+                hollow_rhombus(5);
+            }*/
+           
+        }
+
 
 
 
