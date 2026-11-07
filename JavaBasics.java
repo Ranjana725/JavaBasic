@@ -1397,11 +1397,11 @@ public static void butterfly(int n){
     //stars - i
     for(int j=1;j<=i;j++){
         System.out.print("*");
-    }
+    }     
     //spaces - 2*(n-i)
     for(int j=1;j<=2*(n-i);j++){
-        System.out.print(" ");
-    }
+        System.out.print(" ");  
+    }    
     //stars - i
     for(int j=1;j<=i;j++){
         System.out.print("*");
@@ -1457,7 +1457,7 @@ public static void hollow_rhombus(int n){
         }
         //hollow rectangle
         for(int j=1;j<=n;j++){
-            if(i==1 || i==n || j==1 || j==n){
+            if(i==1 || i==n || j==1 || j==n){   
                 System.out.print("*");
             }else {
                 System.out.print(" ");
@@ -1535,7 +1535,7 @@ public static void hollow_rhombus(int n){
         System.out.print(marks[i]+" ");
        }
        System.out.println();
-    }*/
+    }
    public static int linearSearch(int numbers[],int key){
       for(int i=0 ; i<numbers.length;i++){
         if(numbers[i]==key){
@@ -1554,7 +1554,22 @@ public static void hollow_rhombus(int n){
     }else {
         System.out.println("key is at index : "+ index);
     }
-   }
+   }*/
+   //largest number in an array
+   public static int getLargest(int numbers[]){
+    int largest = Integer.MIN_VALUE;
+
+    for(int i=0 ; i<numbers.length;i++){
+        if(largest < numbers[i]){
+            largest = numbers[i];
+        }
+    }  
+    return largest;
+    }
+    public static void main(String args[]){
+        int numbers[] = {1,2,6,3,5};
+        System.out.println("largest is : "+ getLargest(numbers));
+    }
 }
 
 
