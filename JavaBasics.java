@@ -1554,22 +1554,50 @@ public static void hollow_rhombus(int n){
     }else {
         System.out.println("key is at index : "+ index);
     }
-   }*/
+   }
    //largest number in an array
    public static int getLargest(int numbers[]){
     int largest = Integer.MIN_VALUE;
+    int smallest = Integer.MAX_VALUE;
 
     for(int i=0 ; i<numbers.length;i++){
         if(largest < numbers[i]){
             largest = numbers[i];
         }
+        if(smallest > numbers[i]){
+            smallest = numbers[i];
+            }
     }  
+    System.out.println("smallest is : "+ smallest);
     return largest;
     }
     public static void main(String args[]){
         int numbers[] = {1,2,6,3,5};
         System.out.println("largest is : "+ getLargest(numbers));
-    }
+    }*/
+   //binary search - only for sorted array
+   public static int binarySearch(int numbers[],int key){
+    int start = 0, end = numbers.length-1;
+     while(start <= end){
+        int mid = (start + end ) / 2;
+        //comparisons
+        if(numbers[mid] == key){//found
+        return mid;
+        }
+        if(numbers[mid] < key){//right
+            start = mid + 1;
+        } else {//left
+            end = mid - 1;
+        }
+     }
+     return -1;
+
+   }
+   public static void main (String args[]){
+    int numbers[] = {1,3,5,7,9,11};
+    int key = 3;
+    System.out.println("index for key is : "+ binarySearch(numbers,key));
+   }
 }
 
 
