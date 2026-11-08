@@ -1597,7 +1597,7 @@ public static void hollow_rhombus(int n){
     int numbers[] = {1,3,5,7,9,11};
     int key = 3;
     System.out.println("index for key is : "+ binarySearch(numbers,key));
-   }*/
+   }
    //reverse an array
    public static void reverse(int numbers[]){
     int first = 0,last = numbers.length-1;
@@ -1618,7 +1618,22 @@ public static void hollow_rhombus(int n){
         System.out.print(numbers[i]+" ");
     }
     System.out.println();
-   }
+   }*/
+  //pairs in an array
+  public static void printPairs(int numbers[]){
+    for(int i=0;i<numbers.length;i++){
+        int curr = numbers[i];//2,4,6,8,10
+    for(int j=i+1;j<numbers.length;j++) {
+    System.out.print("("+ curr + "," + numbers[j] + ")");
+    }
+    System.out.println();
+  }
+  }
+
+  public static void main(String args[]){
+    int numbers[] = {2,4,6,8,10};
+    printPairs(numbers);
+  }
 }
 
 
