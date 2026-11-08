@@ -1633,7 +1633,7 @@ public static void hollow_rhombus(int n){
   public static void main(String args[]){
     int numbers[] = {2,4,6,8,10};
     printPairs(numbers);
-  }*/
+  }
  //print subarrays of an array
  public static void printSubarrays(int numbers[]){
     int ts = 0;
@@ -1654,7 +1654,9 @@ public static void hollow_rhombus(int n){
  public static void main (String args[]){
     int number[]= {2,4,6,8,10};
     printSubarrays(number);
- }
+ }*/
+
+
 }
 
 
